@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Food_Ordering_System</display-name>
+  
+   <!--  Hotel Admin -->
+  
+  <servlet>
+    <servlet-name>insert menu</servlet-name>
+    <servlet-class>com.hotel.InsertMenuServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insert menu</servlet-name>
+    <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>delete menu</servlet-name>
+    <servlet-class>com.hotel.DeleteMenuServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete menu</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updateMenu</servlet-name>
+    <servlet-class>com.hotel.UpdateMenuServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateMenu</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>view menu</servlet-name>
+    <servlet-class>com.hotel.DisplayMenuServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>view menu </servlet-name>
+    <url-pattern>/display</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--  Cart -->
+  
+  
+  
+  <servlet>
+<servlet-name>retrieve menu</servlet-name>
+<servlet-class>com.Cart.RetrieveMenuServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>retrieve menu</servlet-name>
+<url-pattern>/retrieve</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>Cart</servlet-name>
+<servlet-class>com.Cart.InsertCartServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Cart</servlet-name>
+<url-pattern>/cartinsert</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>ViewCartServlet</servlet-name>
+<servlet-class>com.Cart.ViewCartServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ViewCartServlet</servlet-name>
+<url-pattern>/view</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>Update</servlet-name>
+<servlet-class>com.Cart.UpdateQuantityServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Update</servlet-name>
+<url-pattern>/Quantity</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>RemoveItemServlet</servlet-name>
+<servlet-class>com.Cart.RemoveItemServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>RemoveItemServlet</servlet-name>
+<url-pattern>/remove</url-pattern>
+
+</servlet-mapping>
+<servlet>
+<servlet-name>GenerateBillServlet</servlet-name>
+<servlet-class>com.Cart.GenerateBillServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>GenerateBillServlet</servlet-name>
+<url-pattern>/generateBill</url-pattern>
+</servlet-mapping>
+</web-app>

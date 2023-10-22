@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS to center the content and create a transparent box */
+body {
+	background-image: url('images/billback1.jpg'); /* Replace 'your-image-folder' with the actual folder path */
+    background-size:100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Background color */
+}
+.bill-container {
+    background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a card-like effect */
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2; /* Header background color */
+}
+
+/* Style for the back button */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000; /* Text color */
+    position: fixed;
+    bottom: 50px; /* Adjust the bottom value for vertical positioning */
+    right: 60px; /* Adjust the right value for horizontal positioning */
+}

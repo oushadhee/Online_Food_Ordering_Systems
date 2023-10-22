@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* style.css */
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/home1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+}
+
+.topic {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    margin-top: 0%;
+    font-size: 50px;
+    font-family: 'Roboto', cursive;/
+    font-weight: bold; /* Make the text bold */
+}
+
+h1 {
+    font-size: 40px;
+    font-family: monospace;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #000; /* Change to black background color */
+  
+    border-radius: 10px;
+    color: #fff; /* Set text color to white on black background */
+}
+
+.category {
+    text-align: left;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.category h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.restaurants {
+    display: flex;
+    flex-wrap: nowrap; /* Change to nowrap to prevent wrapping */
+    justify-content: start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.restaurants a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-left: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: transparent; /* Make the text boxes transparent */
+}
+
+.restaurants img {
+    max-width: 200px;
+    max-height: 100%;
+    object-fit: contain;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: block;
+}
+
+.restaurant-text {
+    padding: 10px;
+    background-color: #000; /* Background color for text container */
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.restaurants a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    text-align: center;
+}

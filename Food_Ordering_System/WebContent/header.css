@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background-color: #333; 
+    color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+    vertical-align: middle; /* Align the image vertically to the middle */
+}
+
+.logo-text {
+    font-family: 'Roboto', cursive;
+    font-size: 36px;
+    margin-right: 20px; /* Adjust the margin to control the spacing between the logo and text */
+    vertical-align: middle; /* Align the text vertically to the middle */
+}
+
+
+.button a, .auth-buttons a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: 2px solid #fff; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button a:hover, .auth-buttons a:hover {
+    background-color: #fff; 
+    color: #333; 
+}
+
+
+.auth-buttons {
+    margin-right: 10px;
+}
